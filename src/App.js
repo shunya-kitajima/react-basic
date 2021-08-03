@@ -1,5 +1,7 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+
+import Basic1 from "./components/Basic1";
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
         >
           Learn React
         </a>
+        <Basic1 name="Hooks" />
+        <Basic1 name="Today" />
       </header>
     </div>
   );
