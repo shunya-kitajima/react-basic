@@ -1,9 +1,9 @@
 import logo from "./logo.svg";
 import "./App.css";
 
-import Basic1 from "./components/Basic1";
-import Basic2 from "./components/Basic2";
-import BasicUseEffect from "./components/BasicUseEffect";
+// import Basic1 from "./components/Basic1";
+// import Basic2 from "./components/Basic2";
+// import BasicUseEffect from "./components/BasicUseEffect";
 import TimerContainer from "./components/TimerContainer";
 
 function App() {
@@ -22,9 +22,9 @@ function App() {
         >
           Learn React
         </a>
-        <Basic1 />
+        {/* <Basic1 />
         <Basic2 />
-        <BasicUseEffect />
+        <BasicUseEffect /> */}
       </header>
     </div>
   );
