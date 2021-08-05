@@ -19,8 +19,7 @@ function App() {
         >
           Learn React
         </a>
-        <Basic1 name="Hooks" />
-        <Basic1 name="Today" />
+        <Basic1 />
       </header>
     </div>
   );
