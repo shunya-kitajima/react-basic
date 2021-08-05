@@ -25,6 +25,7 @@ function App() {
         {/* <Basic1 />
         <Basic2 />
         <BasicUseEffect /> */}
+        <TimerContainer />
       </header>
     </div>
   );
