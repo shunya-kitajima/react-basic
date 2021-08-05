@@ -3,6 +3,7 @@ import "./App.css";
 
 import Basic1 from "./components/Basic1";
 import Basic2 from "./components/Basic2";
+import BasicUseEffect from "./components/BasicUseEffect";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         </a>
         <Basic1 />
         <Basic2 />
+        <BasicUseEffect />
       </header>
     </div>
   );
