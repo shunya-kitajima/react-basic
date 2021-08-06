@@ -25,7 +25,7 @@ function App() {
         {/* <Basic1 />
         <Basic2 />
         <BasicUseEffect /> */}
-        <TimerContainer />
+        {/* <TimerContainer /> */}
       </header>
     </div>
   );
