@@ -5,6 +5,7 @@ import "./App.css";
 // import Basic2 from "./components/Basic2";
 // import BasicUseEffect from "./components/BasicUseEffect";
 // import TimerContainer from "./components/TimerContainer";
+import APIFetch from "./components/APIFetch";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Basic2 />
         <BasicUseEffect /> */}
         {/* <TimerContainer /> */}
+        <APIFetch />
       </header>
     </div>
   );
