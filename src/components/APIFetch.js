@@ -1,14 +1,19 @@
 import React, { useState, useEffect } from "react";
-import axios from "axios";
+// import axios from "axios";
 
 const APIFetch = () => {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
-    axios.get("https://jsonplaceholder.typicode.com/posts").then((res) => {
-      setPosts(res.data);
-    }, []);
-  });
+    // axios.get("https://jsonplaceholder.typicode.com/posts").then((res) => {
+    //   setPosts(res.data);
+    // });
+    fetch("https://jsonplaceholder.typicode.com/posts", { method: "GET" })
+      .then((res) => res.json())
+      .then((data) => {
+        setPosts(data);
+      });
+  }, []);
 
   return (
     <div>
