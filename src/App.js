@@ -7,6 +7,7 @@ import "./App.css";
 // import TimerContainer from "./components/TimerContainer";
 import APIFetch from "./components/APIFetch";
 import AppContext from "./contexts/AppContext";
+import B from "./components/B";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
           {/* <BasicUseEffect /> */}
           {/* <TimerContainer /> */}
           <APIFetch />
+          <B />
         </header>
       </div>
     </AppContext.Provider>
