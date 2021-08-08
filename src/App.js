@@ -1,4 +1,4 @@
-import { useReducer } from "react";
+import { useReducer, useState } from "react";
 import logo from "./logo.svg";
 import "./App.css";
 
@@ -11,7 +11,9 @@ import AppContext from "./contexts/AppContext";
 // import B from "./components/B";
 // import BasicReducer from "./components/BasicReducer";
 // import CompB from "./components/CompB";
-import Memo from "./components/Memo";
+// import Memo from "./components/Memo";
+import CountDisplay from "./components/CountDisplay";
+import CountClick from "./components/CountClick";
 
 const initailState = 0;
 const reducer = (currentState, action) => {
@@ -29,6 +31,17 @@ const reducer = (currentState, action) => {
 
 function App() {
   const [count, dispatch] = useReducer(reducer, initailState);
+
+  const [count1, setCount1] = useState(0);
+  const [count2, setCount2] = useState(0);
+
+  const AddCount1 = () => {
+    setCount1((prevCount1) => prevCount1 + 1);
+  };
+
+  const AddCount2 = () => {
+    setCount2((prevCount2) => prevCount2 + 1);
+  };
 
   return (
     <AppContext.Provider
@@ -57,7 +70,9 @@ function App() {
           {/* <BasicReducer /> */}
           {/* Count {count} */}
           {/* <CompB /> */}
-          <Memo />
+          {/* <Memo /> */}
+          <CountDisplay name="count1" count={count1} />
+          <CountClick handleClick={AddCount1} />
         </header>
       </div>
     </AppContext.Provider>
