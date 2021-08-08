@@ -2,14 +2,14 @@ import React, { useState, useMemo } from "react";
 
 const Memo = () => {
   const [count1, setCount1] = useState(0);
-  const [count12, setCount2] = useState(0);
+  const [count2, setCount2] = useState(0);
 
   const AddCount1 = () => {
     setCount1((prevCount1) => prevCount1 + 1);
   };
 
   const AddCount2 = () => {
-    setCount1((prevCount2) => prevCount2 + 1);
+    setCount2((prevCount2) => prevCount2 + 1);
   };
 
   const isOdd = () => {
