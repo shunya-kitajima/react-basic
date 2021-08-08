@@ -1,4 +1,4 @@
-import { useReducer, useState } from "react";
+import { useReducer, useState, useCallback } from "react";
 import logo from "./logo.svg";
 import "./App.css";
 
@@ -35,13 +35,15 @@ function App() {
   const [count1, setCount1] = useState(0);
   const [count2, setCount2] = useState(0);
 
-  const AddCount1 = () => {
+  const AddCount1 = useCallback(() => {
     setCount1((prevCount1) => prevCount1 + 1);
-  };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [count1]);
 
-  const AddCount2 = () => {
+  const AddCount2 = useCallback(() => {
     setCount2((prevCount2) => prevCount2 + 1);
-  };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [count2]);
 
   return (
     <AppContext.Provider
