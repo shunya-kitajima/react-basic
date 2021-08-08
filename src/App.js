@@ -10,7 +10,8 @@ import "./App.css";
 import AppContext from "./contexts/AppContext";
 // import B from "./components/B";
 // import BasicReducer from "./components/BasicReducer";
-import CompB from "./components/CompB";
+// import CompB from "./components/CompB";
+import Memo from "./components/Memo";
 
 const initailState = 0;
 const reducer = (currentState, action) => {
@@ -54,8 +55,9 @@ function App() {
           {/* <APIFetch /> */}
           {/* <B /> */}
           {/* <BasicReducer /> */}
-          Count {count}
-          <CompB />
+          {/* Count {count} */}
+          {/* <CompB /> */}
+          <Memo />
         </header>
       </div>
     </AppContext.Provider>
