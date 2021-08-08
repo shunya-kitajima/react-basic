@@ -72,7 +72,9 @@ function App() {
           {/* <CompB /> */}
           {/* <Memo /> */}
           <CountDisplay name="count1" count={count1} />
-          <CountClick handleClick={AddCount1} />
+          <CountClick handleClick={AddCount1}>AddCount1</CountClick>
+          <CountDisplay name="count2" count={count2} />
+          <CountClick handleClick={AddCount2}>AddCount2</CountClick>
         </header>
       </div>
     </AppContext.Provider>
